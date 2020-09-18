@@ -5,8 +5,10 @@ body {
   counter-reset: section;
 }
 
-.conatainer {
+.container {
   max-width: 1600px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -138,5 +140,37 @@ body {
 .profiles ul li a svg {
   max-width: 100%;
   fill: #ccd6f6;
+}
+
+.banner {
+  max-width: 80%;
+  padding-bottom: 100px;
+}
+
+.secondary-text {
+  color: #62fad6;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
+h1.muted {
+  font-size: 70px;
+  opacity: 0.5;
+}
+
+.intro-banner-text {
+  max-width: 50%;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.about-me {
+  padding: 100px 0;
+  max-width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
