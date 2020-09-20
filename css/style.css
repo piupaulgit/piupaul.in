@@ -33,6 +33,10 @@ body img {
   font-weight: 700;
 }
 
+.section-heading.text-center:after {
+  display: none;
+}
+
 .section-heading:after {
   position: absolute;
   content: "";
@@ -200,7 +204,7 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   font-family: "Fira Code", monospace;
   font-size: 14px;
   border: 0;
-  border-left: 2px solid #ced8f6;
+  border-left: 2px solid #1f263c;
   border-radius: 0;
   color: #ccd6f6;
   padding: 13px 20px;
@@ -217,5 +221,207 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 
 .work {
   padding: 80px 0;
+}
+
+.work .each-feature-project {
+  margin-top: 60px;
+}
+
+.work .each-feature-project .project-type {
+  font-family: "Fira Code", monospace;
+  color: #62fad6;
+  margin-bottom: 5px;
+}
+
+.work .each-feature-project h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.work .each-feature-project ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.work .each-feature-project ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "Fira Code", monospace;
+}
+
+.work .each-feature-project ul li a {
+  color: #ccd6f6;
+}
+
+.work .each-feature-project ul li a i {
+  font-size: 20px;
+}
+
+.work .each-feature-project ul li a:hover {
+  color: #62fad6;
+}
+
+.other-works {
+  padding: 80px 0;
+}
+
+.other-works .other-projects {
+  background: #172a45;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.other-works .other-projects .project-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.other-works .other-projects .project-header span {
+  font-size: 30px;
+  color: #62fad6;
+}
+
+.other-works .other-projects .project-header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.other-works .other-projects .project-header ul li {
+  margin-right: 10px;
+}
+
+.other-works .other-projects .project-header ul li a {
+  color: #ccd6f6;
+  font-size: 20px;
+}
+
+.other-works .other-projects .project-header ul li a:hover {
+  color: #62fad6;
+}
+
+.other-works .other-projects .project-header ul li:last-child {
+  margin: 0;
+}
+
+.other-works .other-projects h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.other-works .other-projects ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.other-works .other-projects ul li {
+  display: inline-block;
+  padding-right: 15px;
+  font-family: "Fira Code", monospace;
+  font-size: 12px;
+}
+
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact p {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contact .small-heading {
+  font-family: "Fira Code", monospace;
+  color: #62fad6;
+}
+
+.contact .small-heading i {
+  font-style: normal;
+}
+
+footer {
+  padding: 140px 0;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Fira Code", monospace;
+}
+
+footer p span {
+  color: #62fad6;
+}
+
+.profiles {
+  position: fixed;
+  left: 30px;
+  padding-bottom: 120px;
+  bottom: 0;
+}
+
+.profiles.right {
+  right: 30px;
+  left: auto;
+}
+
+.profiles.right .myEmail {
+  color: #ccd6f6;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.profiles.right .myEmail:hover {
+  color: #62fad6;
+}
+
+.profiles:after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  left: 10px;
+  height: 100px;
+  width: 1px;
+  background-color: #ccd6f6;
+}
+
+.profiles ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.profiles ul li {
+  margin-bottom: 20px;
+}
+
+.profiles ul li a {
+  width: 20px;
+  color: #ccd6f6;
+  font-size: 20px;
+  padding-left: 6px;
+  display: block;
+}
+
+.profiles ul li a:hover {
+  color: #62fad6;
+}
+
+.profiles ul li a svg {
+  max-width: 100%;
+  fill: #ccd6f6;
 }
 /*# sourceMappingURL=style.css.map */
