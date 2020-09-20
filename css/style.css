@@ -333,6 +333,11 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   text-align: center;
 }
 
+.contact h2 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
 .contact p {
   max-width: 50%;
   margin: 0 auto;
