@@ -34,8 +34,10 @@ body {
     cursor: pointer;
     border-radius: 3px;
     letter-spacing: 1px;
+    transition: all 0.5s;
     font-family: $secondary-font;
     &:hover {
+      box-shadow: 0px 0px 12px -1px #5be3a2;
     }
   }
 }

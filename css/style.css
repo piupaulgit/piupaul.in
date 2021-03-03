@@ -23,7 +23,14 @@ body img {
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   font-family: "Fira Code", monospace;
+}
+
+.btn.btn--theme:hover {
+  -webkit-box-shadow: 0px 0px 12px -1px #5be3a2;
+          box-shadow: 0px 0px 12px -1px #5be3a2;
 }
 
 .section-heading {
