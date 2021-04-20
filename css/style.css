@@ -73,6 +73,10 @@ header .navbar {
   padding: 20px 0;
 }
 
+header .navbar .navbar-brand img {
+  width: 50px;
+}
+
 header .navbar .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -377,7 +381,7 @@ footer p span {
 .profiles {
   position: fixed;
   left: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
   bottom: 0;
 }
 
@@ -405,7 +409,7 @@ footer p span {
   bottom: 0;
   content: "";
   left: 10px;
-  height: 100px;
+  height: 50px;
   width: 1px;
   background-color: #ccd6f6;
 }
@@ -435,5 +439,17 @@ footer p span {
 .profiles ul li a svg {
   max-width: 100%;
   fill: #ccd6f6;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
