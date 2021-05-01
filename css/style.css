@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap");
 body {
-  background-color: #0a192f;
+  background-color: #02393e;
   color: #ccd6f6;
   font-family: "Open Sans", sans-serif;
   counter-reset: section;
@@ -40,6 +40,12 @@ body img {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 992px) {
+  .section-heading {
+    margin-bottom: 30px;
+  }
+}
+
 .section-heading.text-center:after {
   display: none;
 }
@@ -53,6 +59,12 @@ body img {
   opacity: 0.3;
   margin-left: 20px;
   background: #ccd6f6;
+}
+
+@media only screen and (max-width: 992px) {
+  .section-heading:after {
+    width: 80px;
+  }
 }
 
 .section-heading span {
@@ -73,6 +85,33 @@ header .navbar {
   padding: 20px 0;
 }
 
+@media only screen and (max-width: 768px) {
+  header .navbar .navbar-collapse {
+    position: fixed;
+    top: 0;
+    background: #023034;
+    z-index: 9;
+    left: 0;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+header .navbar .navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
+header .navbar .navbar-toggler-icon {
+  color: #62fad6;
+}
+
+header .navbar .navbar-toggler-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
 header .navbar .navbar-brand img {
   width: 50px;
 }
@@ -81,6 +120,17 @@ header .navbar .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar .navbar-nav {
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 header .navbar .navbar-nav .nav-item:last-child {
@@ -115,10 +165,22 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   margin: 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .banner h1 {
+    font-size: 55px;
+  }
+}
+
 .banner h1.muted {
   font-size: 65px;
   opacity: 0.5;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .banner h1.muted {
+    font-size: 40px;
+  }
 }
 
 .banner .intro-banner-text {
@@ -129,12 +191,24 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 992px) {
+  .banner .intro-banner-text {
+    max-width: 90%;
+  }
+}
+
 .banner .btn--theme {
   padding: 15px 20px;
 }
 
 .about {
   padding: 80px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .about {
+    padding: 30px 0;
+  }
 }
 
 .about p {
@@ -165,6 +239,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 
 .experiences {
   padding: 80px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .experiences {
+    padding: 30px 0;
+  }
 }
 
 .experiences h3 {
@@ -201,6 +281,10 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   text-indent: -24px;
 }
 
+.experiences .tab-content ul li:last-child {
+  margin-bottom: 0;
+}
+
 .experiences .tab-content ul li::before {
   content: "▹";
   color: #62fad6;
@@ -234,14 +318,40 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   padding: 80px 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .work {
+    padding: 30px 0;
+  }
+}
+
 .work .each-feature-project {
   margin-top: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+  .work .each-feature-project {
+    margin-top: 0;
+    border: 1px solid #62fad6;
+    background-color: #043338;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .work .each-feature-project:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .work .each-feature-project .project-type {
   font-family: "Fira Code", monospace;
   color: #62fad6;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .work .each-feature-project .project-type {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .work .each-feature-project h4 {
@@ -278,8 +388,14 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   padding: 80px 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .other-works {
+    padding: 30px 0;
+  }
+}
+
 .other-works .other-projects {
-  background: #172a45;
+  background: #043338;
   padding: 40px 20px;
   margin-bottom: 30px;
 }
@@ -344,6 +460,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  .contact {
+    padding: 30px 0;
+  }
+}
+
 .contact h2 {
   font-size: 60px;
   margin-top: 20px;
@@ -353,6 +475,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact p {
+    max-width: 80%;
+  }
 }
 
 .contact .small-heading {
@@ -370,6 +498,12 @@ footer {
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  footer {
+    padding-top: 40px;
+  }
+}
+
 footer p {
   font-family: "Fira Code", monospace;
 }
@@ -381,7 +515,7 @@ footer p span {
 .profiles {
   position: fixed;
   left: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 22vh;
   bottom: 0;
 }
 
@@ -409,7 +543,7 @@ footer p span {
   bottom: 0;
   content: "";
   left: 10px;
-  height: 50px;
+  height: 20vh;
   width: 1px;
   background-color: #ccd6f6;
 }
