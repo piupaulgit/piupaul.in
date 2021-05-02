@@ -54,7 +54,10 @@ body img {
 
 @media only screen and (max-width: 768px) {
   .section-heading {
-    font-size: 20px !important;
+    font-size: 18px;
+  }
+  .section-heading:after {
+    display: none;
   }
 }
 
@@ -84,6 +87,12 @@ body img {
   font-family: "Fira Code", monospace;
   padding-right: 10px;
   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-heading span {
+    padding-right: 0;
+  }
 }
 
 .highlited-small-text {
@@ -310,6 +319,7 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   .experiences .exp-tab-content .tab-content .tab-pane {
     padding-top: 30px;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -407,7 +417,6 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 @media only screen and (max-width: 992px) {
   .work .each-feature-project {
     margin-top: 0;
-    border: 1px solid #62fad6;
     background-color: #043338;
     padding: 20px;
     margin-bottom: 20px;
@@ -547,6 +556,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 30px;
+  }
+}
+
 .contact p {
   max-width: 50%;
   margin: 0 auto;
@@ -556,6 +571,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 @media only screen and (max-width: 992px) {
   .contact p {
     max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact p {
+    max-width: 100%;
   }
 }
 
