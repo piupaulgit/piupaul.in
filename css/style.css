@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap");
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
 body {
   background-color: #02393e;
   color: #ccd6f6;
@@ -46,6 +52,12 @@ body img {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 20px !important;
+  }
+}
+
 .section-heading.text-center:after {
   display: none;
 }
@@ -85,6 +97,32 @@ header .navbar {
   padding: 20px 0;
 }
 
+header .navbar .navbar-collapse .mail-sm {
+  margin-left: 5px !important;
+}
+
+header .navbar .navbar-collapse .mail-sm a {
+  padding-top: 20px;
+  color: #62fad6;
+  display: block;
+}
+
+header .navbar .navbar-collapse .social-icon-sm {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+header .navbar .navbar-collapse .social-icon-sm li a {
+  color: #62fad6;
+}
+
 @media only screen and (max-width: 768px) {
   header .navbar .navbar-collapse {
     position: fixed;
@@ -98,9 +136,20 @@ header .navbar {
   }
 }
 
+header .navbar .navbar-toggler {
+  border: 1px solid #3aaa97;
+  padding: 4px;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
 header .navbar .navbar-toggler:focus {
   outline: none;
-  border: none;
+  background-color: #3aaa97;
+}
+
+header .navbar .navbar-toggler:focus svg {
+  color: #02393e;
 }
 
 header .navbar .navbar-toggler-icon {
@@ -110,6 +159,7 @@ header .navbar .navbar-toggler-icon {
 header .navbar .navbar-toggler-icon svg {
   width: 20px;
   height: 20px;
+  margin-top: 4px;
 }
 
 header .navbar .navbar-brand img {
@@ -183,6 +233,12 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .banner h1.muted {
+    font-size: 34px;
+  }
+}
+
 .banner .intro-banner-text {
   max-width: 53%;
   font-size: 15px;
@@ -239,6 +295,22 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 
 .experiences {
   padding: 80px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .experiences .exp-tab-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experiences .exp-tab-content .tab-content {
+    padding-left: 0;
+  }
+  .experiences .exp-tab-content .tab-content .tab-pane {
+    padding-top: 30px;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -326,6 +398,10 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 
 .work .each-feature-project {
   margin-top: 60px;
+}
+
+.work .each-feature-project img {
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 992px) {

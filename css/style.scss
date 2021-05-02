@@ -10,6 +10,11 @@ $text-color: #ccd6f6;
 $primary-font: "Open Sans", sans-serif;
 $secondary-font: "Fira Code", monospace;
 
+.container {
+  @media only screen and (max-width: 768px) {
+    padding: 0 30px;
+  }
+}
 body {
   background-color: $primary;
   color: $text-color;
@@ -49,6 +54,9 @@ body {
   @media only screen and (max-width: 992px) {
     margin-bottom: 30px;
   }
+  @media only screen and (max-width: 768px) {
+    font-size: 20px !important;
+  }
   &.text-center {
     &:after {
       display: none;
@@ -86,6 +94,28 @@ header {
     font-family: $secondary-font;
     padding: 20px 0;
     .navbar-collapse {
+      .mail-sm {
+        margin-left: 5px !important;
+        a {
+          padding-top: 20px;
+          color: $secondary;
+          display: block;
+        }
+      }
+      .social-icon-sm {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-size: 16px;
+        margin-left: 5px;
+        li {
+          a {
+            color: $secondary;
+          }
+        }
+      }
       @media only screen and (max-width: 768px) {
         position: fixed;
         top: 0;
@@ -98,15 +128,24 @@ header {
       }
     }
     .navbar-toggler {
+      border: 1px solid #3aaa97;
+      padding: 4px;
+      padding-top: 5px;
+      margin-left: 10px;
       &:focus {
         outline: none;
-        border: none;
+        background-color: #3aaa97;
+
+        svg {
+          color: $primary;
+        }
       }
     }
     .navbar-toggler-icon {
       svg {
         width: 20px;
         height: 20px;
+        margin-top: 4px;
       }
       color: $secondary;
     }
@@ -165,6 +204,9 @@ header {
       @media only screen and (max-width: 992px) {
         font-size: 40px;
       }
+      @media only screen and (max-width: 768px) {
+        font-size: 34px;
+      }
     }
   }
   .intro-banner-text {
@@ -213,6 +255,18 @@ header {
 
 .experiences {
   padding: 80px 0;
+  .exp-tab-content {
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      .tab-content {
+        padding-left: 0;
+        .tab-pane {
+          padding-top: 30px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 992px) {
     padding: 30px 0;
   }
@@ -283,6 +337,10 @@ header {
   }
   .each-feature-project {
     margin-top: 60px;
+    img {
+      opacity: 0.7;
+    }
+
     @media only screen and (max-width: 992px) {
       margin-top: 0;
       border: 1px solid $secondary;
