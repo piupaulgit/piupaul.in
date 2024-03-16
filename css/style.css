@@ -14,7 +14,6 @@ body {
   font-size: 14px;
   font-weight: 200;
 }
-
 body img {
   max-width: 100%;
 }
@@ -29,14 +28,11 @@ body img {
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 1px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-family: "Fira Code", monospace;
 }
-
 .btn.btn--theme:hover {
-  -webkit-box-shadow: 0px 0px 12px -1px #5be3a2;
-          box-shadow: 0px 0px 12px -1px #5be3a2;
+  box-shadow: 0px 0px 12px -1px #5be3a2;
 }
 
 .section-heading {
@@ -45,13 +41,11 @@ body img {
   font-size: 25px;
   font-weight: 700;
 }
-
 @media only screen and (max-width: 992px) {
   .section-heading {
     margin-bottom: 30px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .section-heading {
     font-size: 18px;
@@ -60,11 +54,9 @@ body img {
     display: none;
   }
 }
-
 .section-heading.text-center:after {
   display: none;
 }
-
 .section-heading:after {
   position: absolute;
   content: "";
@@ -75,20 +67,17 @@ body img {
   margin-left: 20px;
   background: #ccd6f6;
 }
-
 @media only screen and (max-width: 992px) {
   .section-heading:after {
     width: 80px;
   }
 }
-
 .section-heading span {
   color: #62fad6;
   font-family: "Fira Code", monospace;
   padding-right: 10px;
   font-weight: 200;
 }
-
 @media only screen and (max-width: 768px) {
   .section-heading span {
     padding-right: 0;
@@ -105,33 +94,26 @@ header .navbar {
   font-family: "Fira Code", monospace;
   padding: 20px 0;
 }
-
 header .navbar .navbar-collapse .mail-sm {
   margin-left: 5px !important;
 }
-
 header .navbar .navbar-collapse .mail-sm a {
   padding-top: 20px;
   color: #62fad6;
   display: block;
 }
-
 header .navbar .navbar-collapse .social-icon-sm {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   font-size: 16px;
   margin-left: 5px;
 }
-
 header .navbar .navbar-collapse .social-icon-sm li a {
   color: #62fad6;
 }
-
 @media only screen and (max-width: 768px) {
   header .navbar .navbar-collapse {
     position: fixed;
@@ -144,68 +126,53 @@ header .navbar .navbar-collapse .social-icon-sm li a {
     bottom: 0;
   }
 }
-
 header .navbar .navbar-toggler {
   border: 1px solid #3aaa97;
   padding: 4px;
   padding-top: 5px;
   margin-left: 10px;
 }
-
 header .navbar .navbar-toggler:focus {
   outline: none;
   background-color: #3aaa97;
 }
-
 header .navbar .navbar-toggler:focus svg {
   color: #02393e;
 }
-
 header .navbar .navbar-toggler-icon {
   color: #62fad6;
 }
-
 header .navbar .navbar-toggler-icon svg {
   width: 20px;
   height: 20px;
   margin-top: 4px;
 }
-
 header .navbar .navbar-brand img {
   width: 50px;
 }
-
 header .navbar .navbar-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media only screen and (max-width: 768px) {
   header .navbar .navbar-nav {
     text-align: left;
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
-
 header .navbar .navbar-nav .nav-item:last-child {
   margin-left: 30px;
 }
-
 header .navbar .navbar-nav .nav-item .nav-link {
   color: #ccd6f6;
   font-size: 13px;
   padding: 15px;
 }
-
 header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #62fad6;
 }
-
 header .navbar .navbar-nav .nav-item .nav-link::before {
   counter-increment: section;
   content: "0" counter(section) ". ";
@@ -216,38 +183,32 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   padding: 60px 0;
   padding-top: 30px;
 }
-
 .banner h1 {
   font-size: 90px;
   font-weight: 700;
   color: #ccd6f6;
   margin: 0;
 }
-
 @media only screen and (max-width: 992px) {
   .banner h1 {
     font-size: 55px;
   }
 }
-
 .banner h1.muted {
   font-size: 65px;
   opacity: 0.5;
   margin-bottom: 30px;
 }
-
 @media only screen and (max-width: 992px) {
   .banner h1.muted {
     font-size: 40px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .banner h1.muted {
     font-size: 34px;
   }
 }
-
 .banner .intro-banner-text {
   max-width: 53%;
   font-size: 15px;
@@ -255,13 +216,11 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   font-weight: 200;
   margin-bottom: 30px;
 }
-
 @media only screen and (max-width: 992px) {
   .banner .intro-banner-text {
     max-width: 90%;
   }
 }
-
 .banner .btn--theme {
   padding: 15px 20px;
 }
@@ -269,17 +228,14 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 .about {
   padding: 80px 0;
 }
-
 @media only screen and (max-width: 992px) {
   .about {
     padding: 30px 0;
   }
 }
-
 .about p {
   font-weight: 300px;
 }
-
 .about ul {
   margin: 0;
   padding: 0;
@@ -287,7 +243,6 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   width: 100%;
   margin-top: 40px;
 }
-
 .about ul li {
   font-family: "Fira Code", monospace;
   font-size: 14px;
@@ -295,23 +250,36 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   width: 50%;
   margin-bottom: 10px;
 }
-
 .about ul li:before {
   content: "▹";
   color: #62fad6;
   padding-right: 10px;
 }
 
+.certificates b {
+  font-weight: bold;
+}
+.certificates h3 {
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+}
+.certificates a {
+  color: #62fad6;
+}
+
+.certificate-bg {
+  background: #0c454a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .experiences {
   padding: 80px 0;
 }
-
 @media only screen and (max-width: 768px) {
   .experiences .exp-tab-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .experiences .exp-tab-content .tab-content {
     padding-left: 0;
@@ -322,39 +290,32 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
     padding-right: 0;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .experiences {
     padding: 30px 0;
   }
 }
-
 .experiences h3 {
   font-size: 20px;
   font-family: "Fira Code", monospace;
   font-weight: bold;
 }
-
 .experiences h3 a {
   color: #62fad6;
 }
-
 .experiences h4 {
   font-size: 13px;
   font-family: "Fira Code", monospace;
   margin-bottom: 20px;
 }
-
 .experiences .tab-content {
   padding-left: 40px;
 }
-
 .experiences .tab-content ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .experiences .tab-content ul li {
   font-size: 13px;
   line-height: 1.6;
@@ -362,21 +323,17 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   padding-left: 20px;
   text-indent: -24px;
 }
-
 .experiences .tab-content ul li:last-child {
   margin-bottom: 0;
 }
-
 .experiences .tab-content ul li::before {
   content: "▹";
   color: #62fad6;
   padding-right: 10px;
 }
-
 .experiences .nav {
   border: 0;
 }
-
 .experiences .nav .nav-item .nav-link {
   font-family: "Fira Code", monospace;
   font-size: 14px;
@@ -385,35 +342,29 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   border-radius: 0;
   color: #ccd6f6;
   padding: 13px 20px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .experiences .nav .nav-item .nav-link.active, .experiences .nav .nav-item .nav-link:hover {
   border: 0;
   border-left: 2px solid #62fad6;
   color: #62fad6;
-  background: #62fad614;
+  background: rgba(98, 250, 214, 0.0784313725);
 }
 
 .work {
   padding: 80px 0;
 }
-
 @media only screen and (max-width: 992px) {
   .work {
     padding: 30px 0;
   }
 }
-
 .work .each-feature-project {
   margin-top: 60px;
 }
-
 .work .each-feature-project img {
   opacity: 0.7;
 }
-
 @media only screen and (max-width: 992px) {
   .work .each-feature-project {
     margin-top: 0;
@@ -425,46 +376,38 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
     margin-bottom: 0;
   }
 }
-
 .work .each-feature-project .project-type {
   font-family: "Fira Code", monospace;
   color: #62fad6;
   margin-bottom: 5px;
 }
-
 @media only screen and (max-width: 992px) {
   .work .each-feature-project .project-type {
     padding-top: 30px;
     margin-bottom: 0;
   }
 }
-
 .work .each-feature-project h4 {
   margin-top: 20px;
   font-weight: bold;
 }
-
 .work .each-feature-project ul {
   padding: 0;
   margin: 0;
   list-style: none;
   padding: 20px 0;
 }
-
 .work .each-feature-project ul li {
   display: inline-block;
   margin-right: 20px;
   font-family: "Fira Code", monospace;
 }
-
 .work .each-feature-project ul li a {
   color: #ccd6f6;
 }
-
 .work .each-feature-project ul li a i {
   font-size: 20px;
 }
-
 .work .each-feature-project ul li a:hover {
   color: #62fad6;
 }
@@ -472,67 +415,53 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
 .other-works {
   padding: 80px 0;
 }
-
 @media only screen and (max-width: 992px) {
   .other-works {
     padding: 30px 0;
   }
 }
-
 .other-works .other-projects {
   background: #043338;
   padding: 40px 20px;
   margin-bottom: 30px;
 }
-
 .other-works .other-projects .project-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .other-works .other-projects .project-header span {
   font-size: 30px;
   color: #62fad6;
 }
-
 .other-works .other-projects .project-header ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .other-works .other-projects .project-header ul li {
   margin-right: 10px;
 }
-
 .other-works .other-projects .project-header ul li a {
   color: #ccd6f6;
   font-size: 20px;
 }
-
 .other-works .other-projects .project-header ul li a:hover {
   color: #62fad6;
 }
-
 .other-works .other-projects .project-header ul li:last-child {
   margin: 0;
 }
-
 .other-works .other-projects h4 {
   font-size: 16px;
   font-weight: bold;
   margin: 20px 0;
   line-height: 1.8;
 }
-
 .other-works .other-projects ul {
   padding: 0;
   margin: 0;
   list-style: none;
   padding-top: 10px;
 }
-
 .other-works .other-projects ul li {
   display: inline-block;
   padding-right: 15px;
@@ -544,47 +473,39 @@ header .navbar .navbar-nav .nav-item .nav-link::before {
   padding: 80px 0;
   text-align: center;
 }
-
 @media only screen and (max-width: 992px) {
   .contact {
     padding: 30px 0;
   }
 }
-
 .contact h2 {
   font-size: 60px;
   margin-top: 20px;
 }
-
 @media only screen and (max-width: 768px) {
   .contact h2 {
     font-size: 30px;
   }
 }
-
 .contact p {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
-
 @media only screen and (max-width: 992px) {
   .contact p {
     max-width: 80%;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .contact p {
     max-width: 100%;
   }
 }
-
 .contact .small-heading {
   font-family: "Fira Code", monospace;
   color: #62fad6;
 }
-
 .contact .small-heading i {
   font-style: normal;
 }
@@ -594,17 +515,14 @@ footer {
   padding-bottom: 40px;
   text-align: center;
 }
-
 @media only screen and (max-width: 992px) {
   footer {
     padding-top: 40px;
   }
 }
-
 footer p {
   font-family: "Fira Code", monospace;
 }
-
 footer p span {
   color: #62fad6;
 }
@@ -615,26 +533,21 @@ footer p span {
   padding-bottom: 22vh;
   bottom: 0;
 }
-
 .profiles.right {
   right: 30px;
   left: auto;
 }
-
 .profiles.right .myEmail {
   color: #ccd6f6;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 12px;
 }
-
 .profiles.right .myEmail:hover {
   color: #62fad6;
 }
-
 .profiles:after {
   position: absolute;
   bottom: 0;
@@ -644,17 +557,14 @@ footer p span {
   width: 1px;
   background-color: #ccd6f6;
 }
-
 .profiles ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .profiles ul li {
   margin-bottom: 20px;
 }
-
 .profiles ul li a {
   width: 20px;
   color: #ccd6f6;
@@ -662,11 +572,9 @@ footer p span {
   padding-left: 6px;
   display: block;
 }
-
 .profiles ul li a:hover {
   color: #62fad6;
 }
-
 .profiles ul li a svg {
   max-width: 100%;
   fill: #ccd6f6;
@@ -677,10 +585,8 @@ footer p span {
     max-width: 940px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 90%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

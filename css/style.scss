@@ -259,6 +259,26 @@ header {
   }
 }
 
+.certificates{
+  b{
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: $secondary-font;
+    font-weight: bold;
+  }
+  a {
+    color: $secondary;
+  }
+}
+.certificate-bg{
+  background: #0c454a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
 .experiences {
   padding: 80px 0;
   .exp-tab-content {
